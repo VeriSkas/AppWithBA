@@ -1,0 +1,73 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "amd": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": "warn",
+    "prefer-const": ["error", {
+      "destructuring": "all",
+      "ignoreReadBeforeAssign": true
+  }],
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "react/display-name": "off",
+    "no-unused-vars": "off",
+    "comma-dangle":"off",
+    "semi":"off",
+    "space-before-function-paren": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/consistent-indexed-object-style": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "multiline-ternary": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+          "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+          "message": "Unexpected property on console object was called"
+      }
+    ],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ]
+}

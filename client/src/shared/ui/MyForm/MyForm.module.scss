@@ -1,0 +1,11 @@
+.MyForm {
+  width: 100%;
+
+  form > div:last-child {
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

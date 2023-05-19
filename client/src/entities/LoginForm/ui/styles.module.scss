@@ -1,0 +1,14 @@
+.LoginForm {
+  background: var(--secondary-bg-color);
+  width: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: .5);
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,130 @@
+$footerHeight: 100px;
+$navPadding: 10px;
+$boxShadow: 1px 1px 3px rgba($color: #000000, $alpha: .5);
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.HeaderIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 15px;
+  left: 25px;
+  transform: translateX(260px);
+  z-index: 101;
+  box-shadow: $boxShadow;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--button-color-primary);
+  line-height: 1;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &.close {
+    transform: translateX(0);
+    box-shadow: 1px 1px 1px rgba(199, 199, 199, 0.4392156863);
+    transition: transform .3s;
+  }
+}
+
+.SideBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  max-width: var(--sidebar-width);
+  z-index: 100;
+  box-sizing: border-box;
+  transform: translateX(0px);
+  transition: all .3s;
+  background: var(--mainGrey-bg-color);
+  box-shadow: $boxShadow;
+
+  &.close {
+    transform: translateX(-300px);
+    transition: all .3s;
+  }
+  
+  .NavHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: var(--header-height);
+    background: black;
+    box-shadow: $boxShadow;
+  }
+  
+  .NavLinks {
+    padding: $navPadding;
+    overflow-y: auto;
+    height: calc(100% - var(--header-height) - (2 * $navPadding) - $footerHeight);
+    
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 5px 0;
+      
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        
+        span {
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  .NavFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $navPadding;
+    height: calc($footerHeight - (2 * $navPadding));
+    border-top: 2px solid rgba($color: #000000, $alpha: .7);
+  }
+}
+
+@media (max-width: 380px) {
+  .HeaderIcon {
+    left: -60px;
+
+    &.close {
+      transform: translateX(80px);
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .SideBar {
+    width: 100%;
+  }
+
+  .HeaderIcon {
+    left: -20px;
+
+    &.close {
+      transform: translateX(40px);
+    }
+  }
+}

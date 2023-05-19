@@ -1,0 +1,26 @@
+{
+  "TextContent": {
+    "logo": "Логотип",
+    "loading": "Загрузка"
+  },
+  "BtnText": {
+    "submit": "Подтвердить"
+  },
+  "InputLabels": {
+    "email": "эл.почта",
+    "password": "пароль",
+    "repeat password": "повторить пароль"
+  },
+  "InputErrorMessages": {
+    "This field is required": "Это поле обязательное для заполнения",
+    "Entered email is too short": "Введенная эл.почта слишком короткая",
+    "Enter correct email": "Введите корректную эл.почту",
+    "This field must be 6 symbols or more": "Данное поле должно быть больше 6 символов",
+    "Your passwords do no match": "Пароли не совпадают"
+  },
+  "Tooltip": {
+    "changeTheme": "Сменить тему",
+    "changeLocal": "Сменить язык",
+    "logout": "Выйти"
+  }
+}

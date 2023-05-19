@@ -1,0 +1,26 @@
+{
+  "TextContent": {
+    "logo": "Some logo",
+    "loading": "Loading"
+  },
+  "BtnText": {
+    "submit": "Submit"
+  },
+  "InputLabels": {
+    "email": "email",
+    "password": "password",
+    "repeat password": "repeat password"
+  },
+  "InputErrorMessages": {
+    "This field is required": "This field is required",
+    "Entered email is too short": "Entered email is too short",
+    "Enter correct email": "Enter correct email",
+    "This field must be 6 symbols or more": "This field must be 6 symbols or more",
+    "Your passwords do no match": "Your passwords do no match"
+  },
+  "Tooltip": {
+    "changeTheme": "Change theme",
+    "changeLocal": "Change local",
+    "logout": "Log out"
+  }
+}
