@@ -8,14 +8,17 @@
   },
   "InputLabels": {
     "email": "эл.почта",
+    "name": "имя",
     "password": "пароль",
     "repeat password": "повторить пароль"
   },
   "InputErrorMessages": {
     "This field is required": "Это поле обязательное для заполнения",
-    "Entered email is too short": "Введенная эл.почта слишком короткая",
+    "Entered text is too short": "Введенная информация слишком короткая",
+    "Entered text is too long": "Введенная информация слишком длинная",
     "Enter correct email": "Введите корректную эл.почту",
-    "This field must be 6 symbols or more": "Данное поле должно быть больше 6 символов",
+    "This field must be 5 symbols or more": "Данное поле должно быть больше 5 символов",
+    "This field must be 32 symbols or less": "Данное поле должно быть менее 32 символов",
     "Your passwords do no match": "Пароли не совпадают"
   },
   "Tooltip": {

@@ -6,6 +6,7 @@ export interface SignUpFormProps {
 
 export interface SignUpFormData {
   email: string;
+  name: string;
   password: string;
   password2: string;
 }

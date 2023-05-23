@@ -15,7 +15,7 @@ export const inputsSettings: { [key in keyof LoginFormData]: IInputsSettings } =
         },
         minLength: {
           value: 6,
-          message: 'Entered email is too short',
+          message: 'Entered text is too short',
         },
         pattern: {
           value: regExEmail,
@@ -35,8 +35,12 @@ export const inputsSettings: { [key in keyof LoginFormData]: IInputsSettings } =
           message: 'This field is required',
         },
         minLength: {
-          value: 6,
-          message: 'This field must be 6 symbols or more',
+          value: 5,
+          message: 'This field must be 5 symbols or more',
+        },
+        maxLength: {
+          value: 32,
+          message: 'This field must be 32 symbols or less',
         },
       },
     },

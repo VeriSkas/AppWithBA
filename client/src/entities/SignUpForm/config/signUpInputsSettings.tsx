@@ -15,11 +15,32 @@ export const signUpInputsSettings: { [key in keyof SignUpFormData]: IInputsSetti
         },
         minLength: {
           value: 6,
-          message: 'Entered email is too short',
+          message: 'Entered text is too short',
         },
         pattern: {
           value: regExEmail,
           message: 'Enter correct email',
+        },
+      },
+    },
+  },
+  name: {
+    label: 'name',
+    type: 'text',
+    register: {
+      name: 'name',
+      rules: {
+        required: {
+          value: true,
+          message: 'This field is required',
+        },
+        minLength: {
+          value: 3,
+          message: 'Entered text is too short',
+        },
+        maxLength: {
+          value: 32,
+          message: 'Entered text is too long',
         },
       },
     },
@@ -35,8 +56,12 @@ export const signUpInputsSettings: { [key in keyof SignUpFormData]: IInputsSetti
           message: 'This field is required',
         },
         minLength: {
-          value: 6,
-          message: 'This field must be 6 symbols or more',
+          value: 5,
+          message: 'This field must be 5 symbols or more',
+        },
+        maxLength: {
+          value: 32,
+          message: 'This field must be 32 symbols or less',
         },
       },
     },
@@ -52,8 +77,12 @@ export const signUpInputsSettings: { [key in keyof SignUpFormData]: IInputsSetti
           message: 'This field is required',
         },
         minLength: {
-          value: 6,
-          message: 'This field must be 6 symbols or more',
+          value: 5,
+          message: 'This field must be 5 symbols or more',
+        },
+        maxLength: {
+          value: 32,
+          message: 'This field must be 32 symbols or less',
         },
       },
     },

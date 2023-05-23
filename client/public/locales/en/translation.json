@@ -8,14 +8,17 @@
   },
   "InputLabels": {
     "email": "email",
+    "name": "name",
     "password": "password",
     "repeat password": "repeat password"
   },
   "InputErrorMessages": {
     "This field is required": "This field is required",
-    "Entered email is too short": "Entered email is too short",
+    "Entered text is too short": "Entered text is too short",
+    "Entered text is too long": "Entered text is too long",
     "Enter correct email": "Enter correct email",
-    "This field must be 6 symbols or more": "This field must be 6 symbols or more",
+    "This field must be 5 symbols or more": "This field must be 5 symbols or more",
+    "This field must be 32 symbols or less": "This field must be 32 symbols or less",
     "Your passwords do no match": "Your passwords do no match"
   },
   "Tooltip": {

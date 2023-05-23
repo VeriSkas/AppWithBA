@@ -36,15 +36,9 @@ export const SignUpForm: FC<SignUpFormProps> = ({ title, linkTo, linkText }) => 
     }
   };
 
-  const onSubmit = async ({ email, password }: SignUpFormData): Promise<void> => {
-    const user = {
-      email,
-      password,
-      name: 'User',
-    };
-
+  const onSubmit = async ({ email, password, name }: SignUpFormData): Promise<void> => {
     try {
-      const response = await registerHandler(user).unwrap();
+      const response = await registerHandler({ email, password, name }).unwrap();
 
       dispatch(setUser(response));
       navigate(PATH.home);

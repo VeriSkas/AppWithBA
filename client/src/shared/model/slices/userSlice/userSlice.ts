@@ -30,9 +30,20 @@ export const userSlice = createSlice({
 });
 
 export const userMiddleware: Middleware = () => (next) => (action) => {
-  if (action.type === 'user/setUser') localStorage.setItem('token', action.payload.accessToken);
-  if (action.type === 'user/clearUser') localStorage.removeItem('token');
-  if (action.type === 'user/updateToken') localStorage.setItem('token', action.payload);
+  if (action.type === 'user/setUser') {
+    localStorage.setItem('token', action.payload.accessToken);
+    localStorage.setItem('userId', action.payload.user.id);
+  }
+
+  if (action.type === 'user/clearUser') {
+    localStorage.removeItem('token');
+    localStorage.removeItem('userId');
+  }
+
+  if (action.type === 'user/updateToken') {
+    localStorage.setItem('token', action.payload.refreshToken);
+  }
+
   return next(action);
 };
 

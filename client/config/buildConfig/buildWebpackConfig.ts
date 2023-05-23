@@ -16,6 +16,7 @@ export const buildWebpackConfig = (options: BuildOptions): Configuration => {
     output: {
       path: paths.build,
       filename: isDevMode ? '[name].js' : 'bundle.[chunkhash].js',
+      publicPath: '/',
     },
     plugins: pluginsHandler(options),
     module: {
