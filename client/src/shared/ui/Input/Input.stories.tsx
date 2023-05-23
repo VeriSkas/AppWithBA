@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Input } from '.';
-import { useI18next, withTheme } from '../../lib/storybook/decorators';
+import { useI18next, withTheme } from '../../lib/storybook';
 
 const meta: Meta<typeof Input> = {
   title: 'Input',

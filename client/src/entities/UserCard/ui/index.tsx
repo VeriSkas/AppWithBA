@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { PATH } from '../../../shared/config/constants/paths';
-import { Avatar } from '../../../shared/ui/Avatar';
-import { LogoutBtn } from '../../../features/logout';
-import { useGetUserByIdQuery } from '../../../shared/api/endpoints/user/userEndpoints';
+import { PATH } from '../../../shared/config/constants';
+import { Avatar } from '../../../shared/ui';
+import { LogoutBtn } from '../../../features';
+import { useGetUserByIdQuery } from '../../../shared/api/endpoints';
 import classes from './styles.module.scss';
 
 export const UserCard: FC<{ onClose: () => void }> = ({ onClose }) => {

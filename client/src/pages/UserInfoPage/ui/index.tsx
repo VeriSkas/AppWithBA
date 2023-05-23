@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { UserInfo } from '../../../entities/UserInfo';
-import { useGetUserByIdQuery } from '../../../shared/api/endpoints/user/userEndpoints';
+import { UserInfo } from '../../../entities';
+import { useGetUserByIdQuery } from '../../../shared/api/endpoints';
 import classes from './styles.module.scss';
 
 const UserInfoPage: FC<{}> = () => {

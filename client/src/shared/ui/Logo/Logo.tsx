@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { PATH } from '../../config/constants/paths';
+import { PATH } from '../../config/constants';
 import logo from '../../../../public/assets/images/logo.png';
 import classes from './Logo.module.scss';
 

@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { SignUpForm } from '../../../entities/SignUpForm';
-import { PATH } from '../../../shared/config/constants/paths';
+import { SignUpForm } from '../../../entities';
+import { PATH } from '../../../shared/config/constants';
 import classes from './styles.module.scss';
 
 export const SignUpPage: FC<{}> = () => {

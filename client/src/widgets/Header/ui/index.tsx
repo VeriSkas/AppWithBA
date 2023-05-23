@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
 
-import { Logo } from '../../../shared/ui/Logo';
-import { ThemeSwitcher } from '../../../features/changeTheme';
-import { LocalizeSwitcher } from '../../../features/changeLocale';
+import { Logo } from '../../../shared/ui';
+import { ThemeSwitcher, LocalizeSwitcher } from '../../../features';
 import classes from './styles.module.scss';
 
 export const Header: FC<{}> = () => {

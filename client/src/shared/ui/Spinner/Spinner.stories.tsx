@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Spinner } from '.';
-import { withTheme } from '../../lib/storybook/decorators';
+import { withTheme } from '../../lib/storybook';
 
 const meta: Meta<typeof Spinner> = {
   title: 'Spinner',

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Header } from '..';
-import { useI18next, withRouter, withTheme } from '../../../shared/lib/storybook/decorators';
+import { useI18next, withRouter, withTheme } from '../../../shared/lib/storybook';
 
 const meta: Meta<typeof Header> = {
   title: 'Header',

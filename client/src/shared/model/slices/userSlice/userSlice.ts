@@ -1,7 +1,7 @@
 import { Middleware, PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { UserState } from './types';
-import { IAuthResponse } from '../../../api/endpoints/auth/types';
+import { IAuthResponse } from '../../../api/endpoints';
 
 const initialState: UserState = {
   user: null,

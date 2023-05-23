@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 
-import { PATH } from '../../../../shared/config/constants/paths';
-import { Spinner } from '../../../../shared/ui/Spinner';
+import { PATH } from '../../../../shared/config/constants';
+import { Spinner } from '../../../../shared/ui';
 
 const StartPage = React.lazy(async () => await import('../../../../pages/StartPage'));
 const MainPage = React.lazy(async () => await import('../../../../pages/MainPage'));

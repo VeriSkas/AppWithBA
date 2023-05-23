@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SupportedLanguages } from '../../../../config/i18next/i18n';
 
-import { LocalStorageKey } from '../../../shared/config/constants/localStorage';
+import { LocalStorageKey } from '../../../shared/config/constants';
 
 export const useLocal = (): (() => void) => {
   const { i18n } = useTranslation();

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button } from '../../../shared/ui/Button';
+import { Button } from '../../../shared/ui';
 import { useLocal } from '../lib/useLocal';
 
 export const LocalizeSwitcher: FC<{}> = () => {

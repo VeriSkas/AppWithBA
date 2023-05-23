@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { LoginForm } from '../../../entities/LoginForm';
-import { PATH } from '../../../shared/config/constants/paths';
+import { LoginForm } from '../../../entities';
+import { PATH } from '../../../shared/config/constants';
 import classes from './styles.module.scss';
 
 const LoginPage: FC<{}> = () => {

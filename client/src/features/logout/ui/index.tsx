@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
-import { PATH } from '../../../shared/config/constants/paths';
-import { useMyDispatch } from '../../../shared/lib/utils/storeHooks';
-import { clearUser } from '../../../shared/model/slices/userSlice/userSlice';
+import { PATH } from '../../../shared/config/constants';
+import { useMyDispatch } from '../../../shared/lib/utils';
+import { clearUser } from '../../../shared/model/slices';
 
 export const LogoutBtn: FC<{}> = () => {
   const { t } = useTranslation();

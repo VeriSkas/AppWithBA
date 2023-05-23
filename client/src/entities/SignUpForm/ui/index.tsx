@@ -5,14 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 import { SignUpFormData, SignUpFormProps } from '../config/interface';
 import { signUpInputsSettings } from '../config/signUpInputsSettings';
-import { inputRender } from '../../../shared/lib/utils/inputRender';
-import { MyForm } from '../../../shared/ui/MyForm';
-import { Button } from '../../../shared/ui/Button';
-import { MyLink } from '../../../shared/ui/MyLink';
-import { useRegisterMutation } from '../../../shared/api/endpoints/auth/authEndpoint';
-import { useMyDispatch } from '../../../shared/lib/utils/storeHooks';
+import { inputRender, useMyDispatch } from '../../../shared/lib/utils';
+import { MyLink, Button, MyForm } from '../../../shared/ui';
+import { useRegisterMutation } from '../../../shared/api/endpoints';
 import { PATH } from '../../../shared/config/constants';
-import { setUser } from '../../../shared/model/slices/userSlice/userSlice';
+import { setUser } from '../../../shared/model/slices';
 import classes from './styles.module.scss';
 
 export const SignUpForm: FC<SignUpFormProps> = ({ title, linkTo, linkText }) => {

@@ -1,12 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { UserCard } from '../ui';
-import {
-  withLimitWidth,
-  withRouter,
-  withStore,
-  withTheme,
-} from '../../../shared/lib/storybook/decorators';
+import { withLimitWidth, withRouter, withStore, withTheme } from '../../../shared/lib/storybook';
 
 const meta: Meta<typeof UserCard> = {
   title: 'UserCard',

@@ -1,12 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { LoginForm } from '..';
-import {
-  useI18next,
-  withRouter,
-  withStore,
-  withTheme,
-} from '../../../shared/lib/storybook/decorators';
+import { useI18next, withRouter, withStore, withTheme } from '../../../shared/lib/storybook';
 
 const meta: Meta<typeof LoginForm> = {
   title: 'LoginForm',

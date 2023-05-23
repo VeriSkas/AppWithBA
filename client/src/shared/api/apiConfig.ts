@@ -6,7 +6,7 @@ import type {
 } from '@reduxjs/toolkit/query';
 
 import { RootState } from '../../app/store/store';
-import { clearUser, updateToken } from '../model/slices/userSlice/userSlice';
+import { clearUser, updateToken } from '../model/slices';
 
 const baseQuery = fetchBaseQuery({
   baseUrl: 'http://localhost:2300/',

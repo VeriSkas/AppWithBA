@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Logo } from '.';
+import { withRouter } from '../../lib/storybook';
 import '../../../app/styles/index.scss';
-import { withRouter } from '../../lib/storybook/decorators';
 
 const meta: Meta<typeof Logo> = {
   title: 'Logo',

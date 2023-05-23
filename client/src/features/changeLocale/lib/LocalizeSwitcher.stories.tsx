@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
 import { LocalizeSwitcher } from '..';
-import { withTheme } from '../../../shared/lib/storybook/decorators';
+import { withTheme } from '../../../shared/lib/storybook';
 
 const meta: Meta<typeof LocalizeSwitcher> = {
   title: 'LocalizeSwitcher',
